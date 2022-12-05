@@ -1,0 +1,52 @@
+﻿﻿body {
+    width: 900px;
+}
+
+* {
+    font-family: Arial;
+    font-size: 14px;
+    background-color: salmon;
+}
+
+@media (min-width: 800px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        padding: 10px;
+        width: 75%;
+        height: 5rem;
+    }
+
+    .left {
+        background-color: whitesmoke;
+    }
+
+    .right {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 16px;
+    }
+
+    .header {
+        grid-column: 1 / 3; 
+        height: 3em;
+        background-color: deeppink;
+    }
+
+    .divided {
+        grid-template-columns: 1fr 130px;
+        display: grid;
+    }
+
+    main {
+        height: 23em;
+        width: 100%;
+        align-self: start;
+    }
+
+    aside {
+        height: 23em;
+        width: 100%;
+        align-self: end;
+        background-color: lightpink;
+    }
+}
